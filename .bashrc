@@ -1,3 +1,4 @@
+
 # Python alias
 alias e="source env/bin/activate"
 alias de="deactivate"
