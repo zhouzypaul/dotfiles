@@ -14,7 +14,7 @@ alias gc="git commit -m"
 alias gch="git checkout"
 
 # sys
-alias ..="cd .. && ls"
+alias ..="cd .."
 function cd {
     builtin cd "$@" && ls
 }
