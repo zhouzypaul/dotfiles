@@ -13,6 +13,9 @@ alias gl="git log"
 alias gc="git commit -m"
 alias gch="git checkout"
 
+# apple functionalities
+alias wake='caffeinate'
+
 # sys
 alias ll='ls -lhG'
 alias la='ll -a'
