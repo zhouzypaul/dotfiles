@@ -16,6 +16,10 @@ alias gch="git checkout"
 
 
 # sys
+alias ll='ls -lhG'
+alias la='ll -a'
+alias lock='open -a /System/Library/Frameworks/ScreenSaver.framework//Versions/A/Resources/ScreenSaverEngine.app'
+alias g='grep -i'
 alias ..="cd .."
 function cd {
     builtin cd "$@" && ls
