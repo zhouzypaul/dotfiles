@@ -14,7 +14,8 @@ alias gc="git commit -m"
 alias gch="git checkout"
 
 # apple functionalities
-alias wake='caffeinate'
+alias wake='caffeinate -d'
+alias lock='pmset displaysleepnow'
 
 # sys
 alias ll='ls -lhG'
