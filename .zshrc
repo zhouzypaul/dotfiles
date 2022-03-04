@@ -1,6 +1,13 @@
 
 # Python alias
-alias e="source env/bin/activate"
+function e {
+    if [ $# -eq 0 ]
+        then
+        source env/bin/activate
+    else
+        source "$@/bin/activate"
+    fi
+}
 alias de="deactivate"
 alias python=python3
 alias pip=pip3
@@ -12,6 +19,7 @@ alias gb="git branch"
 alias gl="git log" 
 alias gc="git commit -m"
 alias gch="git checkout"
+alias gpush="git push"
 
 # apple functionalities
 alias wake='caffeinate -d'
@@ -26,6 +34,9 @@ alias ..="cd .."
 function cd {
     builtin cd "$@" && ls
 }
+
+# command history
+export HISTIGNORE="pwd:ls:cd"
 
 # pytorch
 export CUBLAS_WORKSPACE_CONFIG=:4096:8
