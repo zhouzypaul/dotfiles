@@ -21,6 +21,12 @@ alias gl="git log"
 alias gc="git commit -m"
 alias gch="git checkout"
 alias gpush="git push"
+alias gpull="git pull"
+
+
+# onager alias
+alias olog="cd .onager/logs/*"
+alias oback="cd ../../.."
 
 
 # sys
