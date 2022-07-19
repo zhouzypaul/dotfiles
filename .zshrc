@@ -1,3 +1,5 @@
+alias config='vi ~/.zshrc'
+alias cdone='source ~/.zshrc'
 
 # Python alias
 function e {
