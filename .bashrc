@@ -1,3 +1,6 @@
+alias config='vi ~/.bashrc'
+alias cdone='source ~/.bashrc'
+
 
 # Python alias
 function e {
