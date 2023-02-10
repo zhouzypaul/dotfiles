@@ -14,6 +14,7 @@ function e {
 alias de="deactivate"
 alias python=python3
 alias pip=pip3
+alias "pip init"="pip install -U pip wheel setuptools"
 
 
 # git alias 
