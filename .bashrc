@@ -17,6 +17,13 @@ alias pip=pip3
 alias "pipinit"="pip install -U pip wheel setuptools"
 
 
+# Conda alias
+alias conde="conda deactivate"
+function condaa {
+  conda activate "$@"
+}
+
+
 # git alias 
 alias ga="git add -A"
 alias gs="git status"
@@ -58,7 +65,7 @@ export MJLIB_PATH=$HOME/.mujoco/mujoco200/bin/libmujoco200.so
 
 
 # google Cloud SDK 
-source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
+# source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
 # source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
 
 
