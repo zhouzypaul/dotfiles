@@ -15,6 +15,9 @@ alias python=python3
 alias pip=pip3
 alias "pipinit"="pip install -U pip wheel setuptools"
 
+# Python debug alias
+alias pdb="PYDEVD_WARN_SLOW_RESOLVE_TIMEOUT=10 python -m debugpy --wait-for-client --listen 5678 $@"
+
 # Conda alias
 alias conde="conda deactivate"
 function condaa {
