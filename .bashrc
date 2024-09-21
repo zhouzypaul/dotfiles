@@ -3,14 +3,14 @@ alias cdone='source ~/.bashrc'
 
 
 # Python alias
-function e {
-    if [ $# -eq 0 ]
-        then
-        source env/bin/activate
-    else
-        source "$@/bin/activate"
-    fi
-}
+# function e {
+#    if [ $# -eq 0 ]
+#        then
+#        source env/bin/activate
+#    else
+#        source "$@/bin/activate"
+#    fi
+#}
 alias de="deactivate"
 alias python=python3
 alias pip=pip3
