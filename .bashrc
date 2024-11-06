@@ -63,9 +63,8 @@ export CUBLAS_WORKSPACE_CONFIG=:4096:8
 
 
 # mujoco
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$HOME/.mujoco/mujoco200/bin
-export MJKEY_PATH=$HOME/.mujoco/mjkey.txt
-export MJLIB_PATH=$HOME/.mujoco/mujoco200/bin/libmujoco200.so
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$HOME/.mujoco/mujoco210/bin
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/lib/nvidia``
 
 
 # google Cloud SDK 
