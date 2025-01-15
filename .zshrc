@@ -1,15 +1,21 @@
+# tmux color
+if [ ! "$TMUX" = "" ]; then export TERM=xterm-256color; fi
+
 alias config='vi ~/.zshrc'
 alias cdone='source ~/.zshrc'
+alias rsync='rsync -rmlStOv --progress'
+#alias rsync='rsync -rmlStOv --progress --delete --exclude "/.*" --include "/.*/"'
+alias nv='nvitop'
 
 # Python alias
-function e {
-    if [ $# -eq 0 ]
-        then
-        source env/bin/activate
-    else
-        source "$@/bin/activate"
-    fi
-}
+#function e {
+#    if [ $# -eq 0 ]
+#        then
+# source env/bin/activate  # commented out by conda initialize
+#    else
+# source "$@/bin/activate"  # commented out by conda initialize
+#    fi
+#}
 alias de="deactivate"
 alias python=python3
 alias pip=pip3
@@ -55,27 +61,10 @@ function cd {
 # command history
 export HISTIGNORE="pwd:ls:cd"
 
-# pytorch
-export CUBLAS_WORKSPACE_CONFIG=:4096:8
-
 # mujoco
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$HOME/.mujoco/mujoco210/bin
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/lib/nvidia
 
-# google Cloud SDK 
-# source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
-# source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
-
-
-# terminal colors
-autoload -U colors && colors
-PS1="%{$fg[green]%}%n%{$reset_color%}@%{$fg[green]%}%m %{$fg[blue]%}%(5~|%-1~/.../%3~|%4~) %{$reset_color%}% $ "  # trimmed prompt with colors
-# PS1="%{$fg[red]%}%n%{$reset_color%}@%{$fg[blue]%}%m %{$fg[yellow]%}%~ %{$reset_color%}%% "  # full prompt with colors
-export CLICOLOR=1
-export LSCOLORS=ExFxBxDxCxegedabagacad
-# alias ls='ls -Gh'
-
-
 # linux tools
-alias sed="gsed"  # stream editor
+# alias sed="gsed"  # stream editor
 alias nproc="sysctl -n hw.logicalcpu"  # number of logical cpu cores
