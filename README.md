@@ -28,3 +28,5 @@ switch theme after cloning this repo
 ```
 cp ~/repos/dotfiles/my-theme.zsh-theme ~/.oh-my-zsh/custom/themes/robbyrussell.zsh-theme
 ```
+
+To make the zsh autocomplete grey in a tmux session, follow [this](https://github.com/zsh-users/zsh-autosuggestions/issues/229#issuecomment-300675586)
